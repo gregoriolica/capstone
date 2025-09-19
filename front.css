@@ -1,0 +1,126 @@
+/* Basic styles for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* White background */
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #667eea;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Space between navigation items */
+}
+
+.nav-item {
+  /* No specific styles needed here as flex handles layout */
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #e0f0ff;
+  color: #667eea;
+}
+
+/* Adjust body padding to prevent content from being hidden by fixed navbar */
+body {
+  padding-top: 70px; /* Adjust this value based on your navbar's height */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #ffe0ec, #a7c7ff);
+  color: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.avatar {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.intro h2 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.title-tag {
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 10px;
+  display: inline-block;
+  margin-top: 1px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.red {
+  background-color: #ff5a5f;
+  color: white;
+}
+
+.btn.blue {
+  background-color: #e0f0ff;
+  color: #0077cc;
+}
